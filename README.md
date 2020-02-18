@@ -43,11 +43,17 @@ If you want to add your map to the list of the current **Official** maps, please
 1. Fix small bugs
 2. Add more maps
 3. Add a boost for the players
-4. Tutorial
+4. Tutorial - Currently being worked on
 5. Player vs AI
 6. Online multiplayer option
-7. Add Credits
+7. Add Credits - Currently being worked on
 ...
 
+## Online Multiplayer
+Currently being worked on, the files are available on the work in progress folder
+Progress is being made, but a roadblock has been reached
+  The velocity of the player is somewhat dependend on the latency in the communication with the server
+  Need to investigate about online multiplayer architecture to fix this
+  
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

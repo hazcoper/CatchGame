@@ -31,20 +31,24 @@ def screen_update():
     pygame.display.flip()
 
 text_list = [
-    "Made by:",
     "Hazcoper",
+    "Made by:",
     "",
     "",
+    "Hazcoper",
+    "Graphics by:",
     "",
+    "lol, cant you see there is no sound?",
     "Sounds by:",
-    "lol, cant you see there is no sound?"
+    
 ]
 
 text_class_list = []
 
-for e in range(len(text_list)):
+for e in range(len(text_list)-1,-1,-1):
+    print(text_list[e])
     if not text_list[e] == "":
-        text_class_list.append(Text(text_list[e],(255,0,0),e*-25))
+        text_class_list.append(Text(text_list[e],(230, 230, 237),e*-25))
 running = True
 
 while running:
