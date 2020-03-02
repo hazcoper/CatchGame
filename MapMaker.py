@@ -11,7 +11,7 @@ wall_list = []
 background = pygame.image.load("BackGround.png")
 grid_toggle = True
 
-#Making fixed outer walls
+#Making outer walls
 outer_coords = []
 for x in range(0,632, 16):
     outer_coords.append((x, 0))
@@ -24,7 +24,6 @@ outer_walls = [pygame.Rect(pos[0],pos[1],square_size,square_size) for pos in out
 
 pygame.init()
 resolution = (640,480)
-# resolution = (320,240)
 screen = pygame.display.set_mode(resolution)
 
 clock = pygame.time.Clock()
@@ -64,7 +63,7 @@ def map_update(player_flag, grid_flag):
         screen.blit(background, (0,0))
 
     for wall in outer_walls:
-        pygame.draw.rect(screen, (255,255,200),wall)
+        pygame.draw.rect(screen, (255,255,255),wall)
     for wall in wall_list:
         pygame.draw.rect(screen, (255,255,255), wall)
     #draw player
@@ -114,8 +113,8 @@ def make_map():
 
     # Write to file
     file_name = (input("Name of the file? ")).lower()
-    #Check if the map already exist
 
+    #Check if the map already exist
     MapList = os.listdir("maps")
 
     if file_name in MapList:
@@ -188,10 +187,6 @@ while running:
             for wall in wall_list:
                 if player.rect.x == wall.x and player.rect.y == wall.y:
                     wall_list.remove(wall)
-
-    if key[pygame.K_l]:
-        player.rect.x = 1
-        player.rect.y = 1
 
     if key[pygame.K_m]: #Make the map
         make_map()

@@ -36,6 +36,7 @@ If you want to add your map to the list of the current **Official** maps, please
    - Goldway - **Ruhan**
    - Maze - **Hazcoper**
    - Squaring - **Hazcoper**
+   - LoveMap - **Hazcoper**
  - Programing
     - **Hazcoper**
 

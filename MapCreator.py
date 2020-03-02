@@ -2,7 +2,6 @@
 and pixel size"""
 
 resolution = 640, 480
-# resolution = 320,240
 pixel_size = 16
 map_size = int(resolution[0]/pixel_size),int(resolution[1]/pixel_size)
 print(map_size)

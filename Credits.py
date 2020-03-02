@@ -1,7 +1,7 @@
 import pygame
 import os
 
-os.environ["SDL_VIDEO_CENTERED"] = "1" # Center the window
+# os.environ["SDL_VIDEO_CENTERED"] = "1" # Center the window
 pygame.init()
 screen_size = (640,480)
 screen = pygame.display.set_mode(screen_size)

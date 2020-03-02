@@ -9,7 +9,7 @@ add tittle screen, add boost, add timers, figure out the score system
 maybe add multiplayer ability"""
 
 walls = [] #List of walls
-os.environ["SDL_VIDEO_CENTERED"] = "1" #Center the window
+# os.environ["SDL_VIDEO_CENTERED"] = "1" #Center the window
 pygame.init()
 screen = pygame.display.set_mode((640,480)) #setting the resolution
 # screen = pygame.display.set_mode((320,240))
@@ -107,8 +107,8 @@ def screen_update():
     pygame.draw.rect(screen, (6, 255, 253) , obj1.rect)
     P1Score = font.render("Player 1: " + str(player1.points), 1, (0,0,255))
     P2Score = font.render("Player 2: " + str(player2.points), 1, (0,0,255))
-    screen.blit(P1Score, (180, -2))
-    screen.blit(P2Score, (380, -2))
+    # screen.blit(P1Score, (180, -2))
+    # screen.blit(P2Score, (380, -2))
     pygame.display.flip()
 
 def round_end():

@@ -5,7 +5,7 @@ import pygame
 """Used to select the map the user wants to play, still work in progress"""
 
 
-os.environ["SDL_VIDEO_CENTERED"] = "1" #Center the window
+# os.environ["SDL_VIDEO_CENTERED"] = "1" #Center the window
 pygame.init()
 resolution = (640,480)
 screen = pygame.display.set_mode(resolution) #setting the resolution
